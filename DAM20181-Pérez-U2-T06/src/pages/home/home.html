@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Ingrese el Email </ion-label>
+    <ion-input type="text" [(ngModel)]="email.cadena"></ion-input>
+  
+  </ion-item>
+  <p></p>
+  <p></p>
+    <div text-center>
+
+      <button ion-button (click)="LogIn()">Ingresar</button>
+
+    </div>
+    <p></p>
+    <p></p>
+    <ion-label *ngIf="exceptionn">¡Correo electronico incorrecto!</ion-label>  
+</ion-content>
